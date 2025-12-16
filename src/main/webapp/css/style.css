@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ffe6f0, #e6ccff); /* розово-фиолетовый градиент */
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Заголовки */
+.header {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff3399;
+    margin-top: 20px;
+}
+
+.subheader {
+    font-size: 20px;
+    color: #cc0066;
+    margin-bottom: 30px;
+}
+
+/* Корзина */
+.basket-link {
+    display: inline-block;
+    font-weight: bold;
+    color: #ff1a8c;
+    margin-bottom: 20px;
+}
+
+/* Карточки */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 220px;
+    height: 280px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff3399;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(255, 51, 153, 0.2);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 51, 153, 0.4);
+}
+
+/* Выход */
+.logout-link {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 25px;
+    background-color: #fff;
+    color: #ff3399;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.logout-link:hover {
+    background-color: #ff66b2;
+    color: #fff;
+}

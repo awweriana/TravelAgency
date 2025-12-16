@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <display-name>TravelAgency</display-name>
+
+    <filter>
+        <filter-name>AuthFilter</filter-name>
+        <filter-class>org.example.filter.AuthFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>AuthFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <welcome-file-list>
+        <welcome-file>user-login.jsp</welcome-file>
+    </welcome-file-list>
+
+
+    <!-- Главная страница -->
+    <servlet>
+        <servlet-name>MainServlet</servlet-name>
+        <servlet-class>org.example.controller.MainServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MainServlet</servlet-name>
+        <url-pattern>/main</url-pattern>
+    </servlet-mapping>
+
+    <!-- Вход пользователя -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>org.example.controller.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/user-login</url-pattern>
+    </servlet-mapping>
+
+    <!-- Регистрация -->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>org.example.controller.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <!-- Админ-панель -->
+    <servlet>
+        <servlet-name>AdminServlet</servlet-name>
+        <servlet-class>org.example.controller.AdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/admin</url-pattern>
+        <url-pattern>/admin-login</url-pattern>
+    </servlet-mapping>
+
+    <!-- Админ-главная -->
+    <servlet>
+        <servlet-name>AdminMainServlet</servlet-name>
+        <servlet-class>org.example.controller.AdminMainServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminMainServlet</servlet-name>
+        <url-pattern>/admin-panel</url-pattern>
+    </servlet-mapping>
+
+    <!-- Корзина -->
+    <servlet>
+        <servlet-name>BasketServlet</servlet-name>
+        <servlet-class>org.example.controller.BasketServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BasketServlet</servlet-name>
+        <url-pattern>/basket</url-pattern>
+    </servlet-mapping>
+
+    <!-- Экскурсии -->
+    <servlet>
+        <servlet-name>ExcursionServlet</servlet-name>
+        <servlet-class>org.example.controller.ExcursionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ExcursionServlet</servlet-name>
+        <url-pattern>/excursion-panel</url-pattern>
+    </servlet-mapping>
+
+    <!-- Отдых -->
+    <servlet>
+        <servlet-name>RestServlet</servlet-name>
+        <servlet-class>org.example.controller.RestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RestServlet</servlet-name>
+        <url-pattern>/rest-panel</url-pattern>
+    </servlet-mapping>
+
+    <!-- Шоппинг -->
+    <servlet>
+        <servlet-name>ShoppingServlet</servlet-name>
+        <servlet-class>org.example.controller.ShoppingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShoppingServlet</servlet-name>
+        <url-pattern>/shopping-panel</url-pattern>
+    </servlet-mapping>
+
+    <!-- Покупки -->
+    <servlet>
+        <servlet-name>PurchasesServlet</servlet-name>
+        <servlet-class>org.example.controller.PurchasesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PurchasesServlet</servlet-name>
+        <url-pattern>/admin-purchases</url-pattern>
+    </servlet-mapping>
+
+    <!-- Оплата / ProcessPaymentServlet -->
+    <servlet>
+        <servlet-name>ProcessPaymentServlet</servlet-name>
+        <servlet-class>org.example.controller.ProcessPaymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProcessPaymentServlet</servlet-name>
+        <url-pattern>/payment</url-pattern>
+    </servlet-mapping>
+
+    <!-- Проверка авторизации -->
+    <servlet>
+        <servlet-name>AuthCheckServlet</servlet-name>
+        <servlet-class>org.example.controller.AuthCheckServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthCheckServlet</servlet-name>
+        <url-pattern>/auth-check</url-pattern>
+    </servlet-mapping>
+
+    <!-- ДОПОЛНИТЕЛЬНЫЕ НАСТРОЙКИ -->
+    <!-- Сессии -->
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <!-- Кодировка по умолчанию -->
+    <context-param>
+        <param-name>characterEncoding</param-name>
+        <param-value>UTF-8</param-value>
+    </context-param>
+
+</web-app>

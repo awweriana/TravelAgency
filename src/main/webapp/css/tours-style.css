@@ -1,0 +1,100 @@
+/* Заголовки */
+.page-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back-link {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 8px 15px;
+    background-color: #eee;
+    color: #333;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    background-color: #ddd;
+}
+
+/* Таблица туров */
+.tour-table {
+    width: 90%;
+    margin: 0 auto 30px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.tour-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    color: #333;
+}
+
+.tour-table td {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+/* Последняя строка без границы */
+.tour-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Цена */
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.new-price {
+    color: #ff3399;
+    font-weight: bold;
+}
+
+/* Скидка */
+.discount {
+    color: #cc0066;
+    font-weight: bold;
+}
+
+/* Горящий тур */
+.hot {
+    color: #ff3300;
+    font-weight: bold;
+}
+
+/* Кнопка купить */
+.buy-btn {
+    padding: 8px 15px;
+    background-color: #ff66b2;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: #ff3399;
+}
+
+/* Общий текст */
+.total-count {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}

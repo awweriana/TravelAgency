@@ -1,0 +1,152 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #ffe6f0, #f9e0ff); /* нежный градиент */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Заголовки */
+.page-title {
+    text-align: center;
+    color: #d63384; /* насыщенный розовый */
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Сообщение о пустой корзине */
+.empty-msg {
+    text-align: center;
+    font-size: 18px;
+    color: #b85c9e;
+}
+
+/* Таблица корзины */
+.basket-table {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 25px rgba(216, 133, 193, 0.3);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.basket-table th {
+    background-color: #fce4f0;
+    padding: 12px;
+    text-align: center;
+    color: #d63384;
+    font-weight: bold;
+}
+
+.basket-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #f3cce1;
+}
+
+.basket-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Скидки и итоги */
+.discount {
+    color: #d63384;
+    font-weight: bold;
+}
+
+.user-discount {
+    color: #ff66b2;
+    font-weight: bold;
+}
+
+.old-price {
+    color: #999;
+    text-decoration: line-through;
+}
+
+.new-price {
+    color: #d63384;
+    font-weight: bold;
+}
+
+/* Кнопки */
+.btn {
+    padding: 10px 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 0 4px 12px rgba(216, 133, 193, 0.3);
+    font-size: 14px;
+}
+
+.btn-back {
+    background-color: #f9cce3;
+    color: #d63384;
+}
+
+.btn-back:hover {
+    background-color: #e898c6;
+    color: #fff;
+}
+
+.btn-order {
+    background-color: #d63384;
+    color: #fff;
+}
+
+.btn-order:hover {
+    background-color: #b82f70;
+}
+
+.btn-remove {
+    background-color: #ff66b2;
+    color: #fff;
+}
+
+.btn-remove:hover {
+    background-color: #e6007e;
+}
+
+.btn-clear {
+    background-color: #b85c9e;
+    color: #fff;
+}
+
+.btn-clear:hover {
+    background-color: #9b3b7a;
+}
+
+/* Блок с личной скидкой */
+.user-discount-info {
+    background-color: #ffe6f0;
+    padding: 12px;
+    border-left: 5px solid #d63384;
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(216, 133, 193, 0.2);
+}
+
+/* Центрирование кнопок */
+.buttons-row {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.total-count {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}

@@ -1,0 +1,88 @@
+/* Общие стили страницы */
+.admin-page {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e6e6fa, #d8bfd8);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Контейнер формы */
+.admin-box {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 380px;
+}
+
+/* Заголовок */
+.admin-box-title {
+    color: #6a5acd;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Форма */
+.admin-box-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.admin-box-form label {
+    text-align: left;
+    font-weight: 600;
+    color: #4b0082;
+}
+
+.admin-box-form input {
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Кнопки */
+.admin-btn {
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Вход администратора */
+.admin-btn-login {
+    background-color: #6a5acd;
+}
+
+.admin-btn-login:hover {
+    background-color: #5b4db3;
+}
+
+/* Кнопка возврата */
+.admin-btn-back {
+    background-color: #999;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.admin-btn-back:hover {
+    background-color: #777;
+    color: #fff;
+}
+
+/* Сообщение об ошибке */
+.admin-msg-error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}

@@ -1,0 +1,88 @@
+/* Общий фон и шрифт */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d4dfdf;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Заголовки */
+h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Таблицы */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.admin-table th, .admin-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.admin-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.admin-table tr:last-child td {
+    border-bottom: none;
+}
+
+.admin-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Кнопки */
+.admin-btn {
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 1px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.admin-btn-edit { background-color: #3498db; }
+.admin-btn-edit:hover { background-color: #2c81ba; }
+
+.admin-btn-delete { background-color: #e74c3c; }
+.admin-btn-delete:hover { background-color: #c0392b; }
+
+.admin-btn-hot { background-color: #f39c12; }
+.admin-btn-hot:hover { background-color: #d68910; }
+
+.admin-btn-add { background-color: #27ae60; padding: 6px 14px; font-size: 14px; }
+.admin-btn-add:hover { background-color: #219150; }
+
+.admin-btn-discount { background-color: #9b59b6; }
+.admin-btn-discount:hover { background-color: #884da7; }
+
+/* Ссылка выхода */
+.admin-logout {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #7f8c8d;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.admin-logout:hover { background-color: #636e72; }

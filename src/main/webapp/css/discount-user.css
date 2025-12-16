@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.discount-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.discount-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.discount-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.discount-form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.btn-save {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background-color: #27ae60;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-save:hover {
+    background-color: #219150;
+}
+
+.btn-back {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #555;
+}
+
+.btn-back:hover {
+    text-decoration: underline;
+}

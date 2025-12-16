@@ -1,0 +1,315 @@
+/* payment.css - Стили для страницы оплаты */
+
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.payment-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Заголовок */
+.payment-header {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.payment-header h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.back-link {
+    display: inline-block;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 0;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Уведомления */
+.alert {
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.alert-error {
+    background-color: #ffebee;
+    color: #c62828;
+    border-left: 4px solid #c62828;
+}
+
+.alert-success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border-left: 4px solid #2e7d32;
+}
+
+/* Сводка заказа */
+.order-summary {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.order-summary h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.user-discount-banner {
+    background-color: #fff8e1;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #ffc107;
+    font-size: 16px;
+}
+
+.user-discount-banner small {
+    display: block;
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.tour-items {
+    margin-top: 20px;
+}
+
+.tour-item {
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+}
+
+.tour-item:last-child {
+    border-bottom: none;
+}
+
+.tour-item h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.price-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.price-old {
+    color: #95a5a6;
+    text-decoration: line-through;
+    font-size: 16px;
+}
+
+.price-arrow {
+    color: #7f8c8d;
+}
+
+.price-new {
+    color: #27ae60;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.discount-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.discount-tag {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.tour-discount {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.user-discount {
+    background-color: #fff8e1;
+    color: #ff8f00;
+}
+
+/* Итоговая сумма */
+.total-summary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.total-summary h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.total-amount {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.savings-info {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.savings-amount {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.savings-value {
+    font-weight: bold;
+    color: #a5d6a7;
+}
+
+.savings-percent {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Форма оплаты */
+.payment-form-section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.payment-form-section h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.form-group select,
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.card-fields {
+    display: none;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.card-fields h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* Кнопка отправки */
+.submit-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .payment-container {
+        padding: 15px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .total-amount {
+        font-size: 28px;
+    }
+
+    .price-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
